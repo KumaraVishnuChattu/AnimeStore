@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Anime Store</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logoicon.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand-wrapper">
+            <img src="../assets/logoicon.jpg" alt="Anime Store Logo">
+            <span class="brand-text">アニメ STORE</span>
+        </a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li class="active"><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1 class="page-title">Shopping Cart</h1>
+        <div id="cart-content-container">
+            <!-- Dynamic Cart Content injected by js/cart.js -->
+            <div class="empty-state">
+                <h2>Loading your anime cart...</h2>
+                <p>Retrieving items from store...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

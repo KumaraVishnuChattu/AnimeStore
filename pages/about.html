@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Anime Store</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logoicon.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand-wrapper">
+            <img src="../assets/logoicon.jpg" alt="Anime Store Logo">
+            <span class="brand-text">アニメ STORE</span>
+        </a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Title Container Hero Banner -->
+    <section id="title-container">
+        <video src="../assets/bgv1.mp4" autoplay muted loop playsinline></video>
+        <h1>About Anime Store</h1>
+    </section>
+
+    <main class="page-container">
+        <div style="background: rgba(219, 178, 123, 0.14); border: 2px solid #D6BE82; border-radius: 24px; padding: 40px; max-width: 900px; margin: 30px auto; line-height: 1.8; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            
+            <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap; margin-bottom: 30px;">
+                <div style="flex: 1; min-width: 260px;">
+                    <h2 style="color: #D6BE82; margin-bottom: 15px; font-size: 28px;">Our Otaku Journey</h2>
+                    <p style="color: #e0d8cd; margin-bottom: 15px;">
+                        Welcome to <strong>Anime Store (アニメ STORE)</strong>! Born from a true reverence for Japanese animation and storytelling, our mission is to deliver authentic, top-tier anime treasures right into the hands of fans and collectors.
+                    </p>
+                    <p style="color: #e0d8cd;">
+                        From Ash's historic Winner's Cap and Ryuk's Death Note to Mikasa's crimson scarf and Gojo's infinity-themed umbrellas, each piece is hand-picked to honor the creators and heroes we cherish.
+                    </p>
+                </div>
+                <div style="text-align: center; flex: 0 0 220px; margin: 0 auto;">
+                    <img src="../assets/itachii.jpg" alt="Itachi Uchiha" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 4px solid #FF4C3C; box-shadow: 0 6px 20px rgba(255, 76, 60, 0.4);">
+                    <div style="color: #D6BE82; font-weight: bold; margin-top: 10px;">Itachi Uchiha</div>
+                    <div style="color: #bfae9f; font-size: 13px; font-style: italic;">Guardian of Authenticity</div>
+                </div>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
+                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 16px; border-left: 4px solid #FF4C3C; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">🛡️</div>
+                    <h3 style="color: #D6BE82; font-size: 16px; margin-bottom: 6px;">100% Genuine</h3>
+                    <p style="color: #c9bcaf; font-size: 13px;">Official and premium licensed collector items</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 16px; border-left: 4px solid #D6BE82; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">⚡</div>
+                    <h3 style="color: #D6BE82; font-size: 16px; margin-bottom: 6px;">Swift Shipping</h3>
+                    <p style="color: #c9bcaf; font-size: 13px;">Carefully boxed in tamper-proof collector packaging</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 16px; border-left: 4px solid #FF4C3C; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">💎</div>
+                    <h3 style="color: #D6BE82; font-size: 16px; margin-bottom: 6px;">4.4% Platform Fee</h3>
+                    <p style="color: #c9bcaf; font-size: 13px;">Transparent pricing powering our community hubs</p>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:center; margin-top: 30px;">
+                <button class="btn-buy" style="max-width: 260px; padding: 14px 28px; font-size: 16px;" onclick="window.location.href='products.html'">
+                    Browse Our Collection
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

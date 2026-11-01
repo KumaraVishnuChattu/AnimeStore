@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Anime Store</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logoicon.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand-wrapper">
+            <img src="../assets/logoicon.jpg" alt="Anime Store Logo">
+            <span class="brand-text">アニメ STORE</span>
+        </a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1 class="page-title">Featured Anime Merchandise</h1>
+
+        <!-- Search & Filter Controls -->
+        <div class="filter-bar">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" class="search-input" placeholder="🔍 Search anime products or descriptions...">
+            </div>
+            <div class="sort-wrapper">
+                <label for="sort-select">Sort By:</label>
+                <select id="sort-select" class="sort-select">
+                    <option value="">Featured</option>
+                    <option value="price_asc">Price: Low to High</option>
+                    <option value="price_desc">Price: High to Low</option>
+                    <option value="rating_desc">Highest Rating</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- EXACT 12 Finalized Product Cards -->
+        <section id="products-container">
+            <div class="card" data-id="1" onclick="openProductModal(1)">
+                <div class="card-header">
+                    <img src="../assets/prod/Ashh.jpg" alt="Ash's Cap">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Ash's Cap</h3>
+                    <h3 class="product-price">Price: 499</h3>
+                    <h3 class="product-rating">Rating: 4.4/5</h3>
+                    <br>
+                    <h3 class="product-desc">The Winner's Cap!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(1)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(1)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="2" onclick="openProductModal(2)">
+                <div class="card-header">
+                    <img src="../assets/prod/DeathNote.jpg" alt="Death Note">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Death Note</h3>
+                    <h3 class="product-price">Price: 1399</h3>
+                    <h3 class="product-rating">Rating: 4.3/5</h3>
+                    <br>
+                    <h3 class="product-desc">Do you like writing names!?</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(2)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(2)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="3" onclick="openProductModal(3)">
+                <div class="card-header">
+                    <img src="../assets/prod/mykasa.jpg" alt="Red Scarf">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Red Scarf</h3>
+                    <h3 class="product-price">Price: 544</h3>
+                    <h3 class="product-rating">Rating: 5/5</h3>
+                    <br>
+                    <h3 class="product-desc">Stock Unavailable!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(3)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(3)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="4" onclick="openProductModal(4)">
+                <div class="card-header">
+                    <img src="../assets/prod/notZenin.jpg" alt="T-Shirt">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: T-Shirt</h3>
+                    <h3 class="product-price">Price: 599</h3>
+                    <h3 class="product-rating">Rating: 4.3/5</h3>
+                    <br>
+                    <h3 class="product-desc">I am not Zenin, Took my wife's name!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(4)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(4)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="5" onclick="openProductModal(5)">
+                <div class="card-header">
+                    <img src="../assets/prod/Og.jpg" alt="Mouse Pad">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Mouse Pad</h3>
+                    <h3 class="product-price">Price: 399</h3>
+                    <h3 class="product-rating">Rating: 4.9/5</h3>
+                    <br>
+                    <h3 class="product-desc">Make your Mouse "Ultra Instinct"</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(5)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(5)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="6" onclick="openProductModal(6)">
+                <div class="card-header">
+                    <img src="../assets/prod/theGoat.jpg" alt="Anya-Man">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Anya-Man</h3>
+                    <h3 class="product-price">Price: 399</h3>
+                    <h3 class="product-rating">Rating: 4.7/5</h3>
+                    <br>
+                    <h3 class="product-desc">The Honoured One!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(6)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(6)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="7" onclick="openProductModal(7)">
+                <div class="card-header">
+                    <img src="../assets/prod/tobi.jpg" alt="The Mask">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: The Mask</h3>
+                    <h3 class="product-price">Price: 499</h3>
+                    <h3 class="product-rating">Rating: 4.9/5</h3>
+                    <br>
+                    <h3 class="product-desc">These fools can never make me sweat.</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(7)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(7)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="8" onclick="openProductModal(8)">
+                <div class="card-header">
+                    <img src="../assets/prod/Waguri.jpg" alt="Mini-Waguri">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Mini-Waguri</h3>
+                    <h3 class="product-price">Price: 399</h3>
+                    <h3 class="product-rating">Rating: 4.4/5</h3>
+                    <br>
+                    <h3 class="product-desc">Cake Loverss all around!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(8)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(8)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="9" onclick="openProductModal(9)">
+                <div class="card-header">
+                    <img src="../assets/prod/GojoUmb.jpg" alt="Umbrella">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Umbrella</h3>
+                    <h3 class="product-price">Price: 350</h3>
+                    <h3 class="product-rating">Rating: 4.5/5</h3>
+                    <br>
+                    <h3 class="product-desc">Get your Infinity!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(9)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(9)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="10" onclick="openProductModal(10)">
+                <div class="card-header">
+                    <img src="../assets/prod/Denji.jpg" alt="iPhone Case">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: iPhone Case</h3>
+                    <h3 class="product-price">Price: 300</h3>
+                    <h3 class="product-rating">Rating: 4.2/5</h3>
+                    <br>
+                    <h3 class="product-desc">Why no one thinks about denji's heart!?</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(10)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(10)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="11" onclick="openProductModal(11)">
+                <div class="card-header">
+                    <img src="../assets/prod/Thorfinn.jpg" alt="The Cup">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: The Cup</h3>
+                    <h3 class="product-price">Price: 179</h3>
+                    <h3 class="product-rating">Rating: 4.6/5</h3>
+                    <br>
+                    <h3 class="product-desc">Peace.</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(11)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(11)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="12" onclick="openProductModal(12)">
+                <div class="card-header">
+                    <img src="../assets/prod/BlueLock.jpg" alt="Hoodie">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-title">Product: Hoodie</h3>
+                    <h3 class="product-price">Price: 699</h3>
+                    <h3 class="product-rating">Rating: 4.1/5</h3>
+                    <br>
+                    <h3 class="product-desc">It's time to wake the inner monster!</h3>
+                    <br>
+                </div>
+                <div class="card-footer" onclick="event.stopPropagation()">
+                    <button class="btn-buy" onclick="handleBuyNow(12)">Buy</button>
+                    <button class="btn-cart" onclick="handleAddToCart(12)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Detail Pop-Up Modal -->
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn" title="Close Modal">&times;</button>
+            <div class="modal-img-col">
+                <img id="modal-img" src="../assets/prod/Ashh.jpg" alt="Product Image">
+            </div>
+            <div class="modal-info-col">
+                <div>
+                    <h2 id="modal-title" class="modal-product-title">Product Name</h2>
+                    <span id="modal-rating" class="modal-rating-badge">★ 4.5 / 5 Rating</span>
+                    <div id="modal-price" class="modal-product-price">$499.00</div>
+                    <div id="modal-desc" class="modal-product-desc">Description of the anime item...</div>
+                </div>
+                <div class="modal-actions">
+                    <button id="modal-buy-now-btn" class="btn-buy">Buy Now</button>
+                    <button id="modal-add-cart-btn" class="btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

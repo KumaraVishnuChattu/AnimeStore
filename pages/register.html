@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Anime Store</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logoicon.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand-wrapper">
+            <img src="../assets/logoicon.jpg" alt="Anime Store Logo">
+            <span class="brand-text">アニメ STORE</span>
+        </a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="active"><a href="register.html">Register</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <div class="auth-wrapper">
+            <div class="auth-header">
+                <h2>Join Anime Store</h2>
+                <p>Create your otaku membership account</p>
+            </div>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-email">Email Address *</label>
+                    <input type="email" id="reg-email" class="form-control" placeholder="itachi@uchihaclan.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-mobile">Mobile Number</label>
+                    <input type="tel" id="reg-mobile" class="form-control" placeholder="+91 9876543210">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password">Password *</label>
+                    <input type="password" id="reg-password" class="form-control" placeholder="Create a strong password" required minlength="4">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-confirm-password">Confirm Password *</label>
+                    <input type="password" id="reg-confirm-password" class="form-control" placeholder="Re-enter your password" required minlength="4">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-otp">4-Digit Security OTP *</label>
+                    <div class="otp-group">
+                        <input type="text" id="reg-otp" class="form-control" placeholder="e.g. 5440" maxlength="4" pattern="\d{4}" required>
+                        <button type="button" id="btn-send-otp" class="btn-send-otp">Send OTP</button>
+                    </div>
+                    <small style="color:#bfae9f; display:block; margin-top:5px; font-size:12px;">Click "Send OTP" to generate your 4-digit code instantly.</small>
+                </div>
+
+                <button type="submit" id="reg-submit-btn" class="auth-submit-btn">
+                    Create Anime Account
+                </button>
+            </form>
+
+            <div class="auth-switch">
+                Already registered? <a href="login.html">Sign in here</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

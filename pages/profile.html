@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Anime Store</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logoicon.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand-wrapper">
+            <img src="../assets/logoicon.jpg" alt="Anime Store Logo">
+            <span class="brand-text">アニメ STORE</span>
+        </a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li class="active"><a href="profile.html">Profile</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1 class="page-title">Otaku Member Profile</h1>
+
+        <div class="profile-card">
+            <div class="profile-avatar">
+                🥋
+            </div>
+            
+            <div class="profile-field">
+                <span>Email Address:</span>
+                <span id="profile-email">Loading...</span>
+            </div>
+
+            <div class="profile-field">
+                <span>Mobile Number:</span>
+                <span id="profile-mobile">Loading...</span>
+            </div>
+
+            <div class="profile-field">
+                <span>Member Since:</span>
+                <span id="profile-joined">Loading...</span>
+            </div>
+
+            <div class="profile-field">
+                <span>Total Orders Placed:</span>
+                <span id="profile-orders-count">0</span>
+            </div>
+
+            <button id="profile-logout-btn" class="btn-logout">
+                Sign Out
+            </button>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

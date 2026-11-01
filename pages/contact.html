@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Anime Store</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logoicon.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand-wrapper">
+            <img src="../assets/logoicon.jpg" alt="Anime Store Logo">
+            <span class="brand-text">アニメ STORE</span>
+        </a>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Title Container Hero Banner -->
+    <section id="title-container">
+        <video src="../assets/bgv2.mp4" autoplay muted loop playsinline></video>
+        <h1>Contact Support</h1>
+    </section>
+
+    <main class="page-container">
+        <div style="background: rgba(219, 178, 123, 0.15); border: 2px solid #D6BE82; border-radius: 24px; padding: 35px; max-width: 600px; margin: 30px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <h2 style="color: #D6BE82; margin-bottom: 15px; text-align:center;">Reach Out to Our Otaku Squad</h2>
+            <p style="color: #e0d8cd; margin-bottom: 25px; text-align:center;">Have a question about a shipment, sizing, or custom figures? Leave us a note below!</p>
+            
+            <form onsubmit="event.preventDefault(); showToast('Message dispatched to anime headquarters!', 'success'); this.reset();">
+                <div class="form-group">
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" class="form-control" placeholder="Levi Ackerman" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" class="form-control" placeholder="levi@scoutinglegion.org" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg">Message / Inquiry</label>
+                    <textarea id="contact-msg" class="form-control" rows="4" placeholder="Tell us how we can help..." required></textarea>
+                </div>
+                <button type="submit" class="auth-submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
